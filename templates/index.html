@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+    <div class="container">
+        <h1>Learn to Drive with Confidence</h1>
+        <p>Manual & Automatic Lessons | Professional Instructors | Flexible Times</p>
+        <button class="btn btn-dark">Book Now</button>
+    </div>
+</section>
+
+<section id="packages" class="section">
+    <div class="container">
+        <h2>Choose Your Lesson Package</h2>
+
+        <div class="card-grid">
+            {% for p in lesson_packages %}
+            <div class="card">
+                <span class="tag">{{ p.type }}</span>
+                <h3>{{ p.instructor }}</h3>
+                <p>{{ p.price }}</p>
+                <p class="small-text">{{ p.tag }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="section">
+    <div class="container">
+        <h2>From the Blog</h2>
+
+        {% for post in posts %}
+        <div class="blog-card">
+            <span class="badge">{{ post.category }}</span>
+            <h3><a href="/post/{{ post.id }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+            <small>{{ post.date }} — {{ post.author }}</small>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
+
+

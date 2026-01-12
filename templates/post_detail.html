@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section">
+    <div class="container">
+        <span class="badge">{{ post.category }}</span>
+        <h1>{{ post.title }}</h1>
+        <p><small>{{ post.date }} — {{ post.author }}</small></p>
+
+        <article class="post-article">
+            <p>{{ post.excerpt }}</p>
+            <p>This is placeholder article text. Replace with real blog content later.</p>
+        </article>
+
+        <a href="/" class="btn btn-outline">← Back to Home</a>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoCar Ltd – Learn to Drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">AutoCar Ltd</div>
+        <nav class="main-nav">
+            <a href="/">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn btn-ghost">Sign in</button>
+            <button class="btn btn-dark">Register</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <p>© 2025 AutoCar Ltd — Learn to Drive with Confidence</p>
+</footer>
+
+</body>
+</html>

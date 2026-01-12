@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
+
+/* Header */
+.site-header {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #444;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.btn-ghost {
+    background: white;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    background: white;
+    text-align: center;
+}
+
+/* Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tag {
+    background: #eee;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.small-text {
+    color: #777;
+}
+
+/* Blog Section */
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.badge {
+    background: #ddd;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+}
+
+.section {
+    padding: 40px 0;
+}
